@@ -1,0 +1,240 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f3f6;
+        }
+        .header {
+            background-color: #60A5FA; /* Tailwind CSS blue-400 */
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+        .header input {
+            width: 50%;
+            padding: 10px;
+            border: none;
+            border-radius: 2px;
+        }
+        .header .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        .header .nav-links a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+        .left-column {
+            width: 40%;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .left-column img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .left-column .thumbnail {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+        .left-column .thumbnail img {
+            width: 60px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .right-column {
+            width: 60%;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .right-column h1 {
+            font-size: 24px;
+            margin: 0;
+            color: #333;
+        }
+        .right-column .price {
+            font-size: 28px;
+            color: #388e3c;
+            margin: 10px 0;
+        }
+        .right-column .specifications {
+            margin: 20px 0;
+        }
+        .right-column .specifications h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .right-column .specifications ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .right-column .specifications ul li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .right-column .purchase-options {
+            margin: 20px 0;
+        }
+        .right-column .purchase-options input {
+            margin-right: 10px;
+        }
+        .right-column .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .right-column .buttons button {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .right-column .buttons .add-to-cart {
+            background-color: #ff9f00;
+            color: white;
+        }
+        .right-column .buttons .buy-now {
+            background-color: #fb641b;
+            color: white;
+        }
+        .right-column .buttons .virtual-try-on {
+            background-color: #6A5ACD;
+            color: white;
+        }
+        .right-column .buttons .price-prediction {
+            background-color: #FF4500;
+            color: white;
+        }
+        .right-column .buttons .bargaining-assistant {
+            background-color: #20B2AA;
+            color: white;
+        }
+        .right-column .warranty {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .right-column .warranty img {
+            width: 20px;
+            margin-right: 10px;
+        }
+        .right-column .color-options,
+        .right-column .storage-options {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .right-column .color-options img,
+        .right-column .storage-options button {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .right-column .storage-options button {
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">ShopEase</div>
+        <input type="text" placeholder="Search for products, brands and more">
+        <div class="nav-links">
+            <a href="#">My Account</a>
+            <a href="#">More</a>
+            <a href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="left-column">
+            <img src="https://storage.googleapis.com/a1aa/image/rwrimCTJ8hptAZiWgpuDUfxPjE3AfDy2k7cAbaFwTyZ8qpenA.jpg" alt="Apple iPhone 16 Pro Max" width="400" height="400">
+            <div class="thumbnail">
+                <img src="https://storage.googleapis.com/a1aa/image/ifOsmxA8bWQeOkg8YRLO2mQ5z1G5MwDaZYp2fmzskVOFWT9nA.jpg" alt="Thumbnail 1" width="60" height="60">
+                <img src="https://storage.googleapis.com/a1aa/image/NLdpHsqETfWHLirLMSuKkU7fGf2geYjFDz8uChfyTSw0XN1fE.jpg" alt="Thumbnail 2" width="60" height="60">
+                <img src="https://storage.googleapis.com/a1aa/image/76vvAvkvReXffoserLN9TL5h6d8pTvWSW2Ya1jq55vlkrm6PB.jpg" alt="Thumbnail 3" width="60" height="60">
+                <img src="https://storage.googleapis.com/a1aa/image/FO47Bf33LAxxFaqwwYGR9aHWZW1dqFJ0iHlBYezgTFByqpenA.jpg" alt="Thumbnail 4" width="60" height="60">
+                <img src="https://storage.googleapis.com/a1aa/image/WTGZpnHYWUZKIdfIWihjRSjUEeBTWVguSnJ9r0AylqV1qpenA.jpg" alt="Thumbnail 5" width="60" height="60">
+            </div>
+        </div>
+        <div class="right-column">
+            <h1>Apple iPhone 16 Pro Max (Desert Titanium, 256 GB)</h1>
+            <div class="price">₹1,44,900</div>
+            <div class="specifications">
+                <h2>Specifications</h2>
+                <ul>
+                    <li>Display: 6.9-inch Super Retina XDR</li>
+                    <li>Processor: A16 Bionic chip</li>
+                    <li>Camera: Triple 12MP Ultra Wide, Wide, and Telephoto cameras</li>
+                    <li>Battery Life: Up to 28 hours talk time</li>
+                    <li>Storage: 256 GB</li>
+                    <li>Operating System: iOS 16</li>
+                </ul>
+            </div>
+            <div class="purchase-options">
+                <input type="radio" name="purchase" checked> Buy without Exchange ₹1,44,900<br>
+                <input type="radio" name="purchase"> Buy with Exchange up to ₹46,950 off
+            </div>
+            <div class="buttons">
+                <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> ADD TO CART</button>
+                <button class="buy-now"><i class="fas fa-bolt"></i> BUY NOW</button>
+                <button class="virtual-try-on"><i class="fas fa-eye"></i> Virtual Try-On</button>
+                <button class="price-prediction"><i class="fas fa-chart-line"></i> Price Prediction Tool</button>
+                <button class="bargaining-assistant"><i class="fas fa-handshake"></i> Bargaining Assistant</button>
+            </div>
+            <div class="warranty">
+                <img src="https://storage.googleapis.com/a1aa/image/oqZ06P2f5Ly2eEffRIFYMDkOaoHTomw9dGfFyThIpe7QxaqfJA.jpg" alt="Warranty Icon" width="20" height="20">
+                <span>1 year warranty for phone and 1 year warranty for in Box Accessories. <a href="#">Know More</a></span>
+            </div>
+            <div class="color-options">
+                <span>Color</span>
+                <img src="https://storage.googleapis.com/a1aa/image/DMGSEzNLX6oPINbu5HZjOhItJuiE8GFVS24pDakagD5taqfJA.jpg" alt="Color Option 1" width="40" height="40">
+                <img src="https://storage.googleapis.com/a1aa/image/dXrP2TJPc46bKx0KvwSm4Zgzrnm5soeiDFB4kgfICtlArpenA.jpg" alt="Color Option 2" width="40" height="40">
+                <img src="https://storage.googleapis.com/a1aa/image/Ax5c5Xdxpf1cMCxc4F39mlNWGUTwcbhXWQp8cZRALqUi1UfTA.jpg" alt="Color Option 3" width="40" height="40">
+                <img src="https://storage.googleapis.com/a1aa/image/mRgCztfrzBULQqeARArrohpj4ce9NuUyqG2GNjy10j22VT9nA.jpg" alt="Color Option 4" width="40" height="40">
+            </div>
+            <div class="storage-options">
+                <span>Storage</span>
+                <button>256 GB</button>
+                <button>512 GB</button>
+                <button>1 TB</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

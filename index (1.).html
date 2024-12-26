@@ -1,0 +1,303 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   ShopEase - Your One-Stop Online Store
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+    .carousel {
+      position: relative;
+      overflow: hidden;
+      height: 20rem;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+    .carousel img.active {
+      opacity: 1;
+    }
+    @keyframes slide {
+      0%, 100% { opacity: 1; }
+      33.33%, 66.66% { opacity: 0; }
+    }
+    .carousel img:nth-child(1) {
+      animation: slide 9s infinite;
+    }
+    .carousel img:nth-child(2) {
+      animation: slide 9s infinite 3s;
+    }
+    .carousel img:nth-child(3) {
+      animation: slide 9s infinite 6s;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-100 text-gray-800">
+  <header class="bg-white shadow-md sticky top-0 z-50">
+   <div class="container mx-auto flex justify-between items-center p-4">
+    <div class="text-2xl font-bold text-blue-500">
+     ShopEase
+    </div>
+    <nav class="space-x-4">
+     <a class="text-gray-800 hover:text-blue-500" href="/index (3).html">
+      Home
+     </a>
+     <a class="text-gray-800 hover:text-blue-500" href="/index (3).html">
+      Shop
+     </a>
+     <a class="text-gray-800 hover:text-blue-500" href="/index (3).html">
+      Deals
+     </a>
+     <a class="text-gray-800 hover:text-blue-500" href="/index (3).html">
+      Contact
+     </a>
+    </nav>
+   </div>
+  </header>
+  <section class="bg-gradient-to-r from-blue-500 to-blue-300 text-white text-center py-20">
+   <div class="container mx-auto">
+    <h1 class="text-4xl font-bold mb-4">
+     Welcome to ShopEase
+    </h1>
+    <p class="text-xl">
+     Find everything you need at unbeatable prices!
+    </p>
+   </div>
+  </section>
+  <section class="carousel">
+   <img alt="Featured Product 1" class="active" height="600" src="https://ik.imagekit.io/qljylou3wn/1.jpg?updatedAt=1735225634648&amp;width=800" width="800"/>
+   <img alt="Featured Product 2" height="600" src="https://ik.imagekit.io/qljylou3wn/2.webp?updatedAt=1735225732316&amp;width=800" width="800"/>
+   <img alt="Featured Product 3" height="600" src="https://ik.imagekit.io/qljylou3wn/3.webp?updatedAt=1735225798098" width="800"/>
+  </section>
+  <div class="bg-blue-100 py-12 text-center">
+   <h2 class="text-3xl font-bold text-blue-500 mb-4">
+    New Arrivals
+   </h2>
+   <p class="text-lg text-gray-700 mb-8">
+    Discover the latest products in our store!
+   </p>
+   <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 p-4">
+    <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform hover:scale-105">
+     <img alt="New Arrival Product 1" class="w-full h-48 object-cover" height="300" src="https://ik.imagekit.io/qljylou3wn/4.jpg?updatedAt=1735225872706" width="300"/>
+     <div class="p-4">
+      <h2 class="text-lg font-bold">
+       New Arrival 1
+      </h2>
+      <p class="text-gray-600">
+       Description of the new arrival product 1.
+      </p>
+      <div class="text-blue-500 font-bold text-xl mt-2">
+       $99.99
+      </div>
+      <a class="block bg-blue-500 text-white text-center py-2 rounded-lg mt-4 hover:bg-blue-600" href="/index (3).html">
+       Buy Now
+      </a>
+     </div>
+    </div>
+    <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform hover:scale-105">
+     <img alt="New Arrival Product 2" class="w-full h-48 object-cover" height="300" src="https://ik.imagekit.io/qljylou3wn/5.jpg?updatedAt=1735225933635" width="300"/>
+     <div class="p-4">
+      <h2 class="text-lg font-bold">
+       New Arrival 2
+      </h2>
+      <p class="text-gray-600">
+       Description of the new arrival product 2.
+      </p>
+      <div class="text-blue-500 font-bold text-xl mt-2">
+       $149.99
+      </div>
+      <a class="block bg-blue-500 text-white text-center py-2 rounded-lg mt-4 hover:bg-blue-600" href="/index (3).html">
+       Buy Now
+      </a>
+     </div>
+    </div>
+    <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform hover:scale-105">
+     <img alt="New Arrival Product 3" class="w-full h-48 object-cover" height="300" src="https://ik.imagekit.io/qljylou3wn/6.jpg?updatedAt=1735225995235" width="300"/>
+     <div class="p-4">
+      <h2 class="text-lg font-bold">
+       New Arrival 3
+      </h2>
+      <p class="text-gray-600">
+       Description of the new arrival product 3.
+      </p>
+      <div class="text-blue-500 font-bold text-xl mt-2">
+       $199.99
+      </div>
+      <a class="block bg-blue-500 text-white text-center py-2 rounded-lg mt-4 hover:bg-blue-600" href="/index (3).html">
+       Buy Now
+      </a>
+     </div>
+    </div>
+    <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform hover:scale-105">
+     <img alt="New Arrival Product 4" class="w-full h-48 object-cover" height="300" src="https://ik.imagekit.io/qljylou3wn/7.jpg?updatedAt=1735226046285" width="300"/>
+     <div class="p-4">
+      <h2 class="text-lg font-bold">
+       New Arrival 4
+      </h2>
+      <p class="text-gray-600">
+       Description of the new arrival product 4.
+      </p>
+      <div class="text-blue-500 font-bold text-xl mt-2">
+       $249.99
+      </div>
+      <a class="block bg-blue-500 text-white text-center py-2 rounded-lg mt-4 hover:bg-blue-600" href="/index (3).html">
+       Buy Now
+      </a>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="bg-blue-100 py-12 text-center">
+   <h2 class="text-3xl font-bold text-blue-500 mb-4">
+    Featured Products
+   </h2>
+   <p class="text-lg text-gray-700 mb-8">
+    Check out our best-selling items!
+   </p>
+  </div>
+  <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 p-4">
+   <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform hover:scale-105">
+    <img alt="Wireless Headphones with active noise cancellation and 30-hour battery life" class="w-full h-48 object-cover" height="300" src="https://ik.imagekit.io/qljylou3wn/9.webp?updatedAt=1735226127881" width="300"/>
+    <div class="p-4">
+     <h2 class="text-lg font-bold">
+      Wireless Headphones
+     </h2>
+     <p class="text-gray-600">
+      Experience crystal-clear sound and unbeatable comfort.
+     </p>
+     <div class="text-blue-500 font-bold text-xl mt-2">
+      $59.99
+     </div>
+     <a class="block bg-blue-500 text-white text-center py-2 rounded-lg mt-4 hover:bg-blue-600" href="/index (3).html">
+      Buy Now
+     </a>
+    </div>
+   </div>
+   <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform hover:scale-105">
+    <img alt="Smartphone Pro Max with 108MP camera and 5G connectivity" class="w-full h-48 object-cover" height="300" src="https://ik.imagekit.io/qljylou3wn/8.jpeg?updatedAt=1735226201544" width="300"/>
+    <div class="p-4">
+     <h2 class="text-lg font-bold">
+      Smartphone
+     </h2>
+     <p class="text-gray-600">
+      Stay connected with the latest technology.
+     </p>
+     <div class="text-blue-500 font-bold text-xl mt-2">
+      $499.99
+     </div>
+     <a class="block bg-blue-500 text-white text-center py-2 rounded-lg mt-4 hover:bg-blue-600" href="/index (3).html">
+      Buy Now
+     </a>
+    </div>
+   </div>
+   <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform hover:scale-105">
+    <img alt="Fitness Tracker Ultra with advanced health monitoring" class="w-full h-48 object-cover" height="300" src="https://ik.imagekit.io/qljylou3wn/10.webp?updatedAt=1735226307592" width="300"/>
+    <div class="p-4">
+     <h2 class="text-lg font-bold">
+      Fitness Tracker
+     </h2>
+     <p class="text-gray-600">
+      Track your fitness goals with ease.
+     </p>
+     <div class="text-blue-500 font-bold text-xl mt-2">
+      $29.99
+     </div>
+     <a class="block bg-blue-500 text-white text-center py-2 rounded-lg mt-4 hover:bg-blue-600" href="/index (3).html">
+      Buy Now
+     </a>
+    </div>
+   </div>
+   <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform hover:scale-105">
+    <img alt="Gaming Console X with 4K gaming, ray tracing, and 1TB SSD storage" class="w-full h-48 object-cover" height="300" src="https://ik.imagekit.io/qljylou3wn/11.webp?updatedAt=1735226367917" width="300"/>
+    <div class="p-4">
+     <h2 class="text-lg font-bold">
+      Gaming Console
+     </h2>
+     <p class="text-gray-600">
+      Enjoy immersive gaming experiences.
+     </p>
+     <div class="text-blue-500 font-bold text-xl mt-2">
+      $299.99
+     </div>
+     <a class="block bg-blue-500 text-white text-center py-2 rounded-lg mt-4 hover:bg-blue-600" href="#">
+      Buy Now
+     </a>
+    </div>
+   </div>
+  </div>
+  <section class="bg-blue-500 text-white text-center py-12">
+   <div class="container mx-auto">
+    <h2 class="text-3xl font-bold mb-4">
+     Limited-Time Offers
+    </h2>
+    <p class="text-lg">
+     Hurry up! These deals won't last long.
+    </p>
+   </div>
+  </section>
+  <section class="bg-white py-12">
+   <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold text-blue-500 mb-8">
+     What Our Customers Say
+    </h2>
+    <div class="space-y-8">
+     <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+      <p class="text-gray-700">
+       "ShopEase is my go-to store for all my shopping needs. The prices are amazing!"
+      </p>
+      <div class="text-blue-500 font-bold mt-2">
+       - Sarah K.
+      </div>
+     </div>
+     <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+      <p class="text-gray-700">
+       "I love the variety of products available. Fast shipping and great customer service."
+      </p>
+      <div class="text-blue-500 font-bold mt-2">
+       - John D.
+      </div>
+     </div>
+     <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+      <p class="text-gray-700">
+       "The deals on ShopEase are unbeatable. I always find what I need!"
+      </p>
+      <div class="text-blue-500 font-bold mt-2">
+       - Emily R.
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <footer class="bg-white text-gray-600 p-4 shadow-md">
+   <div class="container mx-auto flex justify-between items-center">
+    <p>
+     © 2024 ShopEase. All rights reserved.
+    </p>
+    <div class="space-x-4">
+     <a class="hover:text-blue-500" href="#">
+      <i class="fab fa-facebook">
+      </i>
+     </a>
+     <a class="hover:text-blue-500" href="#">
+      <i class="fab fa-twitter">
+      </i>
+     </a>
+     <a class="hover:text-blue-500" href="#">
+      <i class="fab fa-instagram">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>
